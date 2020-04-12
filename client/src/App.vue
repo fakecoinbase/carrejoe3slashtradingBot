@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-toolbar-title>Bittrader</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
