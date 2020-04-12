@@ -1,0 +1,29 @@
+{
+  "name": "bittrader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrejoe3/tradingBot.git"
+  },
+  "author": "Joe Carré",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrejoe3/tradingBot/issues"
+  },
+  "homepage": "https://github.com/carrejoe3/tradingBot#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
