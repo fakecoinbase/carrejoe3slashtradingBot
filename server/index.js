@@ -1,7 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-
+const coinbase = require('coinbase')
+const config = require('./config/config')
+const client = new coinbase.Client({ 'apiKey': config.COINBASE_API_KEY, 'apiSecret': config.COINBASE_API_SECRET })
 const app = express()
 
 // Middleware

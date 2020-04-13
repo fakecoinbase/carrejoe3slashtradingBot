@@ -1,5 +1,6 @@
 const express = require('express')
 const mongodb = require('mongodb')
+const config = require('../../config/config')
 
 const router = express.Router()
 
@@ -34,11 +35,11 @@ router.delete('/:id', async (req, res) => {
 })
 
 async function loadUsersCollection () {
-    const client = await mongodb.MongoClient.connect('mongodb+srv://dbUser:dbUserPassword@cluster0-chc92.mongodb.net/test?retryWrites=true&w=majority', {
+    const client = await mongodb.MongoClient.connect(config.MONGO_URL, {
         useNewUrlParser: true
     })
 
-    return client.db('test').collection('users')
+    return client.db(config.MONGO_DATABASE_NAME).collection('users')
 }
 
 module.exports = router
